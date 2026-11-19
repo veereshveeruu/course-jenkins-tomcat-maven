@@ -13,14 +13,15 @@ public class HelloController {
     String hello() {
         return "Now is " + LocalDateTime.now();
     }
-    @GetMapping(value = "/randome")
+    @GetMapping(value = "/random")
     int random(){
         return ThreadLocalRandom.current().nextInt(0,1000);
     }
-
     @GetMapping(value = "/hero")
     String hero(){
-     return "My fav hero is Maheshbabu"
+        return "My favorite superhero is Batman"";
+
     }
  
 }
+
